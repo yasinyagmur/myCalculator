@@ -1,70 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(4, 5rem);
-    grid-template-rows: 10rem repeat(5, 5rem);
-    background-color: black;
-    margin: auto;
-    padding: 2rem;
-    gap: 1rem;
-    border-radius: 2rem;
-    margin-top: 5rem;
-    
+.container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: 10rem repeat(5, 5rem);
+  background-color: black;
+  margin: auto;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 2rem;
+  margin-top: 5rem;
 }
-
-.content{
-    background-color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3rem;
-    
-
+.container .screen{
+    display:flex;
+    justify-content: flex-end;
+    color: #a5a5a5;
 }
-.button0{
-    grid-column: 1/ 5;
-    background-color: black;
+.content {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
 }
-.button17{
-    display: flex;
-    grid-column: 1/ span 2;
-    justify-content: left;
-    padding: 2rem;
+.button0 {
+  grid-column: 1/ 5;
+  background-color: black;
+}
+.button17 {
+  display: flex;
+  grid-column: 1 / span 2;
+  justify-content: left;
+  padding: 2rem;
 }
 .button1,
 .button2,
-.button3{
-    background-color: #a5a5a5;
-    color: black;
+.button3 {
+  background-color: #a5a5a5;
+  color: black;
 }
 .button4,
 .button8,
 .button12,
-.button16{
-    background-color: #f1a33c;
+.button16 {
+  background-color: #f1a33c;
 }
-.container :not(:first-child):hover{
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.5s all ease;
-
+.container :not(:first-child):hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.5s all ease;
 }
-
-
-
-
-
-
-
-
