@@ -2,35 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ios Calculator</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>My Calculator</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./image/icons8-calculator-32.png" type="image/x-icon">
   </head>
   <body>
-    <div class="container">
-        <div class="screen content button0"></div>
-        <div class="reset content button1">AC</div>
-        <div class="mop content button2">+/-</div>
-        <div class="modulus content button3">%</div>
-        <div class="divide content button4">÷</div>
-        <div class="seven content button5">7</div>
-        <div class="eight content button6">8</div>
-        <div class="nine content button7">9</div>
-        <div class="mult content button8">x</div>
-        <div class="four content button9">4</div>
-        <div class="five content button10">5</div>
-        <div class="six content button11">6</div>
-        <div class="minus content button12">-</div>
-        <div class="one content button13">1</div>
-        <div class="two content button14">2</div>
-        <div class="three content button15">3</div>
-        <div class="plus content button16">+</div>
-        <div class="zero content button17">0</div>
-        <div class="dot content button18">,</div>
-        <div class="equal content button19">=</div>
+    <div class="calculator">
+      <div class="display">
+        <div class="previous-display"></div>
+        <div class="current-display"></div>
       </div>
-    <script src="./app.js"></script>
+      <div class="buttons-container">
+        <div class="button function ac">AC</div>
+        <div class="button function pm">±</div>
+        <div class="button function percent">%</div>
+        <div class="button operator division">÷</div>
+        <div class="button num number-7">7</div>
+        <div class="button num number-8">8</div>
+        <div class="button num number-9">9</div>
+        <div class="button operator multiplication">x</div>
+        <div class="button num number-4">4</div>
+        <div class="button num number-5">5</div>
+        <div class="button num number-6">6</div>
+        <div class="button operator subtraction">-</div>
+        <div class="button num number-1">1</div>
+        <div class="button num number-2">2</div>
+        <div class="button num number-3">3</div>
+        <div class="button operator addition">+</div>
+        <div class="button num number-0">0</div>
+        <div class="button num decimal">.</div>
+        <div class="button equal">=</div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
