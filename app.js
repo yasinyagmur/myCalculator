@@ -38,3 +38,39 @@ btnContainer.addEventListener("click", (e) => {
     equalOrPercentPressed = true;
   }
 });
+
+const appendNumber = (num) => {
+  if (currOperand === "0" && num === "0") return;
+  if (currOperand === "0" && num !== ".") {
+    currOperand = num;
+    return;
+  }
+  if (num === "." && currOperand.includes(".")) return;
+
+  if (currOperand.length > 10) return;
+  if (equalOrPercentPressed) {
+    currOperand = num;
+    equalOrPercentPressed = false;
+    return;
+  }
+
+  currOperand += num;
+};
+
+const updatedisplay = () => {
+  if (currOperand.toString().length > 11) {
+    currOperand = Number(currOperand).toExponential(7);
+  }
+  currDisp.textContent = currOperand;
+  prevDisp.textContent = `${previousOperand}${operation}`;
+};
+
+const choosOperator = (op) => {
+  if (previousOperand) {
+    calculate();
+  }
+
+  operation = op;
+  previousOperand = currOperand;
+  currOperand = "";
+};
