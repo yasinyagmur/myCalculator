@@ -74,3 +74,28 @@ const choosOperator = (op) => {
   previousOperand = currOperand;
   currOperand = "";
 };
+const calculate = () => {
+  let calculation;
+  const prev = Number(previousOperand);
+  const current = Number(currOperand);
+
+  switch (operation) {
+    case "+":
+      calculation = prev + current;
+      break;
+    case "-":
+      calculation = prev - current;
+      break;
+    case "x":
+      calculation = prev * current;
+      break;
+    case "÷":
+      calculation = prev / current;
+      break;
+    default:
+      return;
+  }
+  currOperand = calculation;
+  previousOperand = "";
+  operation = "";
+};
